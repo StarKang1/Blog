@@ -1,0 +1,34 @@
+/* 页脚透明 */
+
+#footer {
+    background: transparent;
+}
+
+
+/* 文章top-img透明化 */
+
+#page-header {
+    background: transparent;
+}
+
+
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+
+#page-header.post-bg:before {
+    background-color: transparent;
+}
+
+
+/* 夜间模式伪类遮罩层透明 */
+
+[data-theme="dark"] #footer::before {
+    background: transparent;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent;
+}
+
+[data-theme="light"] #footer::before {
+    background: transparent;
+}
